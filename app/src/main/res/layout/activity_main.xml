@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Titre de la version active -->
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version AVEC ViewModel + LiveData"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Compteur principal -->
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Label du compteur -->
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="compteur"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Bouton INCRÉMENTER -->
+    <Button
+        android:id="@+id/btnIncrement"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="INCRÉMENTER"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Bouton DÉCRÉMENTER -->
+    <Button
+        android:id="@+id/btnDecrement"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="DÉCRÉMENTER"
+        android:backgroundTint="#F44336"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Bouton RÉINITIALISER -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="RÉINITIALISER"
+        android:backgroundTint="#9E9E9E"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Séparateur -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Switcher de version (pour démonstration) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tourner l'écran → le compteur survit !"
+        android:textSize="13sp"
+        android:textColor="#4CAF50"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Grâce au ViewModel + LiveData)"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:gravity="center"/>
+
+</LinearLayout>
